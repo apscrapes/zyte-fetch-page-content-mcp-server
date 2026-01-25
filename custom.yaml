@@ -1,0 +1,33 @@
+version: 2
+name: custom
+displayName: Custom MCP Servers
+registry:
+  zyte-fetch-page-content:
+    description: "Fetches page content using Zyte API with configurable extraction sources (httpResponseBody, browserHtml, browserHtmlOnly)"
+    title: "Zyte Fetch Page Content"
+    type: server
+    dateAdded: "2025-01-25T00:00:00Z"
+    image: zyte-fetch-page-content-mcp-server:latest
+    ref: ""
+    readme: ""
+    toolsUrl: ""
+    source: ""
+    upstream: ""
+    icon: ""
+    tools:
+      - name: fetch_page_content
+      - name: fetch_browser_html
+      - name: fetch_page_content_with_html
+    secrets:
+      - name: ZYTE_API_KEY
+        env: ZYTE_API_KEY
+        example: "your-zyte-api-key-here"
+    metadata:
+      category: integration
+      tags:
+        - web-scraping
+        - content-extraction
+        - zyte
+        - browser-automation
+      license: MIT
+      owner: local
