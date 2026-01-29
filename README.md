@@ -225,6 +225,13 @@ docker mcp catalog import ~/.docker/mcp/catalogs/custom.yaml
 docker mcp server add zyte-fetch-page-content
 ```
 
+or add this to ~/.docker/mcp/registry.yaml
+```
+registry:
+  zyte-fetch-page-content:
+    ref: ""
+```
+
 ### Tools Not Appearing in Claude
 
 1. Verify server is enabled: `docker mcp server ls`
